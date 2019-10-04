@@ -1,15 +1,17 @@
 clc; % impiar pantalla
 clear all; %Borrar laS variableS del workspace
-I = imread('C:\USerS\carlo\Documents\MATLAB\CarlosMatlab\ImgMari\2.jpg'); %leer imagen
+I = imread('6.jpg'); %leer imagen
 S= size(I);
 R = I(:,:,1);
 V = I(:,:,2);
 AZ = I(:,:,3);
 PlanoR = (R-V-AZ);
-ROJO_IN = PlanoR>20;
-% mask = PlanoR>50;
+ROJO_IN = PlanoR>50;
 
 ROJO_IN =  medfilt2(ROJO_IN); %Aplicamos la mediana para eliminar posibles ruidos
+
+figure
+imshow(ROJO_IN);
 
 ROJO_IN = bwareaopen(ROJO_IN,400)
 
@@ -21,12 +23,6 @@ I = double(I);
 I(:,:,1) = I(:,:,1).*mask; %Para el plano de rojo
 I(:,:,2) = I(:,:,2).*mask; %Para el plano de verde
 I(:,:,3) = I(:,:,3).*mask; %Para el plano de aPlanoRul
-%I= uint8(I);
-%{
-figure
-imShoROJO_IN([I2,I]);
-title('ReSultado');
-%}
 
 ImGris = rgb2gray(I);
 
