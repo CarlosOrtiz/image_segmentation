@@ -96,10 +96,16 @@ NoManzanasGala9= imcrop(ImagenEntradaMala9);
 ImagenEntradaMala10= imread('C:\Users\carlo\Documents\MATLAB\CarlosMatlab\ImgManzanas\x4.jpg');
 NoManzanasGala10= imcrop(ImagenEntradaMala10);
 
+ImagenEntradaMala11= imread('C:\Users\carlo\Documents\MATLAB\CarlosMatlab\ImgManzanas\Suelo1.jpg');
+NoManzanasGala11= imcrop(ImagenEntradaMala11);
+
+ImagenEntradaMala12= imread('C:\Users\carlo\Documents\MATLAB\CarlosMatlab\ImgManzanas\Suelo2.jpg');
+NoManzanasGala12= imcrop(ImagenEntradaMala12);
+
 %% Creación De Dos Arreglos Para Guardar Los Recortes De Los Datos Buenos(ManzanasGala{}) Y Malos(NoManzanasGala{}).
 MazanasGala={MazanaGala1,MazanaGala2,MazanaGala3,MazanaGala4,MazanaGala5,MazanaGala6,MazanaGala7,MazanaGala8,MazanaGala9,MazanaGala10,MazanaGala11,MazanaGala12,MazanaGala13,MazanaGala14,MazanaGala15,MazanaGala16,MazanaGala17,MazanaGala18,MazanaGala19,MazanaGala20,MazanaGala21};
 
-NoManzanasGala={NoManzanasGala1,NoManzanasGala2,NoManzanasGala3,NoManzanasGala4,NoManzanasGala5,NoManzanasGala6,NoManzanasGala7,NoManzanasGala8,NoManzanasGala9,NoManzanasGala10};
+NoManzanasGala={NoManzanasGala1,NoManzanasGala2,NoManzanasGala3,NoManzanasGala4,NoManzanasGala5,NoManzanasGala6,NoManzanasGala7,NoManzanasGala8,NoManzanasGala9,NoManzanasGala10,NoManzanasGala11,NoManzanasGala12};
 
 %% Se Crea Una Estructura For, Para Guardas y Separar Los Planos De Colores De Los Recortes Del Arreglo ManzanasGala{}
 for i=1:3
@@ -130,19 +136,19 @@ end
 for i=1:3
     if i==1
         nR=NoManzanasGala1(:,:,i);
-        for j=2:10
+        for j=2:12
             aux=NoManzanasGala{j}(:,:,i);
             nR = [nR(:); aux(:)];
         end
     elseif i==2
         nG=NoManzanasGala1(:,:,i);
-        for j=2:10
+        for j=2:12
             aux=NoManzanasGala{j}(:,:,i);
             nG = [nG(:); aux(:)];
         end
     else
         nB=NoManzanasGala1(:,:,i);
-        for j=2:10
+        for j=2:12
             aux=NoManzanasGala{j}(:,:,i);
             nB = [nB(:); aux(:)];
         end
