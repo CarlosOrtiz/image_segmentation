@@ -75,34 +75,34 @@ NoManzanasGala2= imcrop(ImagenEntradaMala2);
 ImagenEntradaMala3= imread('C:\Users\carlo\Documents\MATLAB\CarlosMatlab\ImgManzanas\c.jpg');
 NoManzanasGala3= imcrop(ImagenEntradaMala3);
 
-ImagenEntradaMala4= imread('C:\Users\carlo\Documents\MATLAB\CarlosMatlab\ImgManzanas\x1.jpg');
+ImagenEntradaMala4= imread('C:\Users\carlo\Documents\MATLAB\CarlosMatlab\ImgManzanas\d.jpg');
 NoManzanasGala4= imcrop(ImagenEntradaMala4);
 
-ImagenEntradaMala5= imread('C:\Users\carlo\Documents\MATLAB\CarlosMatlab\ImgManzanas\x2.jpg');
+ImagenEntradaMala5= imread('C:\Users\carlo\Documents\MATLAB\CarlosMatlab\ImgManzanas\e.jpg');
 NoManzanasGala5= imcrop(ImagenEntradaMala5);
 
-ImagenEntradaMala6= imread('C:\Users\carlo\Documents\MATLAB\CarlosMatlab\ImgManzanas\x2.jpg');
+ImagenEntradaMala6= imread('C:\Users\carlo\Documents\MATLAB\CarlosMatlab\ImgManzanas\f.jpg');
 NoManzanasGala6= imcrop(ImagenEntradaMala6);
 
-ImagenEntradaMala7= imread('C:\Users\carlo\Documents\MATLAB\CarlosMatlab\ImgManzanas\x3.jpg');
+ImagenEntradaMala7= imread('C:\Users\carlo\Documents\MATLAB\CarlosMatlab\ImgManzanas\g.jpg');
 NoManzanasGala7= imcrop(ImagenEntradaMala7);
 
-ImagenEntradaMala8= imread('C:\Users\carlo\Documents\MATLAB\CarlosMatlab\ImgManzanas\x4.jpg');
+ImagenEntradaMala8= imread('C:\Users\carlo\Documents\MATLAB\CarlosMatlab\ImgManzanas\h.jpg');
 NoManzanasGala8= imcrop(ImagenEntradaMala8);
 
-ImagenEntradaMala9= imread('C:\Users\carlo\Documents\MATLAB\CarlosMatlab\ImgManzanas\x4.jpg');
+ImagenEntradaMala9= imread('C:\Users\carlo\Documents\MATLAB\CarlosMatlab\ImgManzanas\i.jpg');
 NoManzanasGala9= imcrop(ImagenEntradaMala9);
 
-ImagenEntradaMala10= imread('C:\Users\carlo\Documents\MATLAB\CarlosMatlab\ImgManzanas\x4.jpg');
+ImagenEntradaMala10= imread('C:\Users\carlo\Documents\MATLAB\CarlosMatlab\ImgManzanas\b.jpg');
 NoManzanasGala10= imcrop(ImagenEntradaMala10);
 
-ImagenEntradaMala11= imread('C:\Users\carlo\Documents\MATLAB\CarlosMatlab\ImgManzanas\Suelo1.jpg');
+ImagenEntradaMala11= imread('C:\Users\carlo\Documents\MATLAB\CarlosMatlab\ImgManzanas\e.jpg');
 NoManzanasGala11= imcrop(ImagenEntradaMala11);
 
-ImagenEntradaMala12= imread('C:\Users\carlo\Documents\MATLAB\CarlosMatlab\ImgManzanas\Suelo2.jpg');
+ImagenEntradaMala12= imread('C:\Users\carlo\Documents\MATLAB\CarlosMatlab\ImgManzanas\i.jpg');
 NoManzanasGala12= imcrop(ImagenEntradaMala12);
 
-%% Creación De Dos Arreglos Para Guardar Los Recortes De Los Datos Buenos(ManzanasGala{}) Y Malos(NoManzanasGala{}).
+%% Creacion De Dos Arreglos Para Guardar Los Recortes De Los Datos Buenos(ManzanasGala{}) Y Malos(NoManzanasGala{}).
 MazanasGala={MazanaGala1,MazanaGala2,MazanaGala3,MazanaGala4,MazanaGala5,MazanaGala6,MazanaGala7,MazanaGala8,MazanaGala9,MazanaGala10,MazanaGala11,MazanaGala12,MazanaGala13,MazanaGala14,MazanaGala15,MazanaGala16,MazanaGala17,MazanaGala18,MazanaGala19,MazanaGala20,MazanaGala21};
 
 NoManzanasGala={NoManzanasGala1,NoManzanasGala2,NoManzanasGala3,NoManzanasGala4,NoManzanasGala5,NoManzanasGala6,NoManzanasGala7,NoManzanasGala8,NoManzanasGala9,NoManzanasGala10,NoManzanasGala11,NoManzanasGala12};
