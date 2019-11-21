@@ -20,7 +20,7 @@ for i=1: S(1)
            X1=R(i,j);
            Y=V(i,j);
            Z=AZ(i,j);       
-           Res = NeuralClassification([double(X1);double(Y);double(Z)]);
+           Res = NeuralClassificationV2([double(X1);double(Y);double(Z)]);
        if (Res>0)
           ROJO_IN(i,j)=255;
        else 
